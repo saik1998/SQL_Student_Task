@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--    <TextView-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Simple Calculator"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/black"/>-->
+
+    <EditText
+        android:id="@+id/value1"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="EnterValue "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="30dp"
+        android:textStyle="bold" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/value2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="73dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:hint="Enter values"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_margin="30dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/result1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Result"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:textColor="@color/black"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+        <android.widget.Button
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="numberEvent"
+            android:text="1"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
+
+        <android.widget.Button
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="numberEvent"
+            android:text="3"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <android.widget.Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:onClick="operatorEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+        <android.widget.Button
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:id="@+id/six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <android.widget.Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:onClick="operatorEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+        <android.widget.Button
+            android:id="@+id/seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:id="@+id/eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8"
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9"
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <android.widget.Button
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:onClick="operatorEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+        <android.widget.Button
+            android:id="@+id/division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:onClick="operatorEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:id="@+id/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="c"
+            android:onClick="acEvent"
+            android:textSize="20sp"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <android.widget.Button
+            android:id="@+id/equls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="="
+            android:onClick="eventEqual"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#D5F1F4"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+        <android.widget.Button
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="."
+            android:onClick="numberEvent"
+            android:background="#D5F1F4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

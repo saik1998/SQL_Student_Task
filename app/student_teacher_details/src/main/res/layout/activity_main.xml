@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student and Teacher Database"
+        android:gravity="center"
+        android:background="#FBD2E0"
+        android:textSize="30dp"/>
+
+
+
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="#EEF1D5"
+        android:entries="@array/School"
+        android:id="@+id/spinner_main"/>
+
+
+    <include
+        layout="@layout/custom_student"
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:visibility="visible" />
+
+    <include
+            layout="@layout/custom_teacher"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="399dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="next"
+        android:layout_gravity="end"
+        android:onClick="nextbtn"/>
+
+
+
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/text_sql1"/>-->
+
+
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:text="next"-->
+<!--            android:id="@+id/next"-->
+
+<!--            android:layout_margin="10dp"/>-->
+
+
+
+<!--    </LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

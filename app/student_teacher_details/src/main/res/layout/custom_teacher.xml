@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="#A9EF78"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:id="@+id/linear_l2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher data"
+        android:background="#EAE08A"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/teacher_sno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Teacher sno"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/teacher_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:hint="Teacher name"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/teacher_sub"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Teacher mail"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        />
+
+
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="90dp"
+            android:text="SAVE"
+            android:textSize="20dp"
+            android:onClick="InsertTeacherData"
+            android:layout_margin="10dp"/>
+<!--        <Button-->
+<!--            android:id="@+id/read_btn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="read"-->
+<!--            android:layout_margin="10dp"/>-->
+
+    </LinearLayout>

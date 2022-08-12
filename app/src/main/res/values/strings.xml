@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SQL_Student_Task</string>
+
+
+    <string-array name="student">
+        <item>--select One--</item>
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+</resources>

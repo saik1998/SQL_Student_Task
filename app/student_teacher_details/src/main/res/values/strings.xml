@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ODS_TASK_SPINNER</string>
+
+    <string-array name="School">
+        <item>--select One--</item>
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+</resources>
